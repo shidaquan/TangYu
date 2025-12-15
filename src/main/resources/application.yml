@@ -1,0 +1,21 @@
+server:
+  port: 9090
+
+dashscope:
+  apiKey: ${DASHSCOPE_API_KEY:sk-dcc82f29f97348deacf9969d27d209bf}
+  baseUrl: ${DASHSCOPE_BASE_URL:wss://dashscope.aliyuncs.com/api-ws/v1/inference}
+  asr:
+    model: ${DASHSCOPE_ASR_MODEL:fun-asr-realtime}
+    languageHints: ${DASHSCOPE_ASR_LANGUAGE_HINTS:zh,en}
+
+alibaba:
+  cloud:
+    accessKeyId: ${ALIBABA_CLOUD_ACCESS_KEY_ID:''}
+    accessKeySecret: ${ALIBABA_CLOUD_ACCESS_KEY_SECRET:''}
+    appKey: ${ALIBABA_CLOUD_APP_KEY:''}
+
+robot:
+  wsUrl: ${ROBOT_WS_URL:ws://localhost:8080/api/v1/robot/memory/ws}
+  personaId: ${ROBOT_PERSONA_ID:394f8467-b114-4ef3-8647-077d2eab5a9d}
+  scene: ${ROBOT_SCENE:chat}
+  inputType: ${ROBOT_INPUT_TYPE:listening}
